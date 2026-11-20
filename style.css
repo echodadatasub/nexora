@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #080b12;
+  color: #f5f7ff;
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  width: 100%;
+  padding: 22px 8%;
+  background: #080b12;
+  border-bottom: 1px solid #202635;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.logo {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 27px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.logo span,
+footer span {
+  color: #5c8dff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: #b7bdcc;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #5c8dff;
+}
+
+.nav-button,
+.primary-button {
+  display: inline-block;
+  background: #5c8dff;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 7px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.nav-button:hover,
+.primary-button:hover {
+  background: #3972ed;
+  transform: translateY(-3px);
+}
+
+.hero {
+  min-height: 600px;
+  padding: 120px 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background: radial-gradient(circle at 80% 40%, #18284b, #080b12 55%);
+}
+
+.tagline,
+.section-label {
+  color: #5c8dff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(42px, 8vw, 75px);
+  line-height: 1.1;
+  max-width: 800px;
+  margin-bottom: 25px;
+}
+
+.hero-text {
+  color: #aeb7ca;
+  max-width: 540px;
+  margin-bottom: 30px;
+  font-size: 17px;
+}
+
+.services,
+.work,
+.about,
+.contact {
+  padding: 90px 8%;
+}
+
+.services h2,
+.work h2,
+.about h2,
+.contact h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 38px;
+  margin-bottom: 35px;
+}
+
+.service-grid,
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.service-card {
+  padding: 30px;
+  background: #111827;
+  border: 1px solid #263249;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-7px);
+  border-color: #5c8dff;
+}
+
+.service-card h3,
+.work-card h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 21px;
+  margin-bottom: 12px;
+}
+
+.service-card p,
+.work-card p,
+.about p,
+.contact p {
+  color: #aeb7ca;
+}
+
+.work {
+  background: #0d121d;
+}
+
+.work-card {
+  background: #151d2c;
+  border: 1px solid #27344b;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.work-card:hover {
+  transform: translateY(-7px);
+  border-color: #5c8dff;
+}
+
+.work-image {
+  height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1b3159, #263e70);
+  color: #fff;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 55px;
+  font-weight: 700;
+}
+
+.work-card h3,
+.work-card p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.work-card h3 {
+  margin-top: 20px;
+}
+
+.work-card p {
+  margin-bottom: 22px;
+  font-size: 14px;
+}
+
+.about {
+  max-width: 1000px;
+}
+
+.about p {
+  max-width: 650px;
+  font-size: 17px;
+}
+
+.contact {
+  text-align: center;
+  background: radial-gradient(circle at center, #192b4d, #080b12 70%);
+}
+
+.contact p {
+  margin-bottom: 28px;
+}
+
+footer {
+  text-align: center;
+  padding: 35px 15px;
+  background: #05070c;
+  border-top: 1px solid #202635;
+}
+
+footer h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+
+footer p {
+  color: #929bad;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+@media (max-width: 750px) {
+  header {
+    padding: 20px 5%;
+  }
+
+  .navbar {
+    justify-content: center;
+  }
+
+  .nav-links {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .hero {
+    padding: 90px 6%;
+    min-height: 520px;
+  }
+
+  .services,
+  .work,
+  .about,
+  .contact {
+    padding: 65px 6%;
+  }
+
+  .service-grid,
+  .work-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services h2,
+  .work h2,
+  .about h2,
+  .contact h2 {
+    font-size: 30px;
+  }
+}
