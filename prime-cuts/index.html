@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Prime Cuts | Premium Barbershop</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #fff;
+}
+
+header {
+  background: #111;
+  padding: 24px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.logo span {
+  color: #c49a55;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #c49a55;
+}
+
+.hero {
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  padding: 90px 7%;
+  background:
+  linear-gradient(90deg, rgba(0,0,0,.9), rgba(0,0,0,.3)),
+  url("https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1400")
+  center/cover;
+}
+
+.hero-content {
+  max-width: 650px;
+}
+
+.tagline {
+  color: #c49a55;
+  letter-spacing: 5px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.hero h1 {
+  font-size: 58px;
+  line-height: 1.15;
+  margin: 25px 0;
+}
+
+.hero p {
+  color: #ddd;
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.button {
+  display: inline-block;
+  background: #c49a55;
+  color: #111;
+  padding: 17px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+section {
+  padding: 85px 7%;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.section-title span {
+  color: #c49a55;
+  letter-spacing: 4px;
+  font-size: 13px;
+}
+
+.section-title h2 {
+  font-size: 36px;
+  margin-top: 15px;
+}
+
+.services {
+  background: #181818;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.service-card {
+  background: #222;
+  padding: 35px 25px;
+  text-align: center;
+  border: 1px solid #333;
+}
+
+.service-card .icon {
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  margin-bottom: 15px;
+  color: #c49a55;
+}
+
+.service-card p {
+  color: #aaa;
+  line-height: 1.7;
+}
+
+.price {
+  display: block;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.about img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.about-text span {
+  color: #c49a55;
+  letter-spacing: 3px;
+  font-size: 13px;
+}
+
+.about-text h2 {
+  font-size: 36px;
+  margin: 20px 0;
+}
+
+.about-text p {
+  color: #aaa;
+  line-height: 1.9;
+}
+
+.booking {
+  background:
+  linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),
+  url("https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=1400")
+  center/cover;
+  text-align: center;
+}
+
+.booking h2 {
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+
+.booking p {
+  color: #ccc;
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
+
+footer {
+  padding: 30px 7%;
+  text-align: center;
+  background: #090909;
+  color: #888;
+  font-size: 13px;
+}
+
+@media(max-width: 750px) {
+  header {
+    gap: 20px;
+  }
+
+  nav {
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 12px;
+  }
+
+  .hero {
+    min-height: 520px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title h2,
+  .about-text h2 {
+    font-size: 30px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">PRIME<span>CUTS.</span></div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#booking">Booking</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+
+    <span class="tagline">THE ART OF A PERFECT CUT</span>
+
+    <h1>Look Sharp.<br>Feel Confident.</h1>
+
+    <p>
+      Experience premium grooming, expert barbering
+      and exceptional attention to detail.
+      Your style deserves the best.
+    </p>
+
+    <a href="#services" class="button">
+      Explore Our Services
+    </a>
+
+  </div>
+</section>
+
+<section class="services" id="services">
+
+  <div class="section-title">
+    <span>WHAT WE OFFER</span>
+    <h2>Our Services</h2>
+  </div>
+
+  <div class="service-grid">
+
+    <div class="service-card">
+      <div class="icon">✂️</div>
+      <h3>Classic Haircut</h3>
+      <p>Clean, professional haircuts tailored to your style.</p>
+      <span class="price">₦5,000</span>
+    </div>
+
+    <div class="service-card">
+      <div class="icon">💈</div>
+      <h3>Beard Grooming</h3>
+      <p>Precise beard shaping and grooming for a fresh look.</p>
+      <span class="price">₦3,000</span>
+    </div>
+
+    <div class="service-card">
+      <div class="icon">🔥</div>
+      <h3>Premium Package</h3>
+      <p>A complete haircut and beard grooming experience.</p>
+      <span class="price">₦8,000</span>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="about" id="about">
+
+  <img
+    src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=900"
+    alt="Professional barbershop"
+  >
+
+  <div class="about-text">
+    <span>ABOUT PRIME CUTS</span>
+
+    <h2>More Than Just A Haircut.</h2>
+
+    <p>
+      At Prime Cuts, we believe every great look begins
+      with attention to detail. Our passion for barbering,
+      quality service and personal style makes every visit
+      a special experience.
+    </p>
+  </div>
+
+</section>
+
+<section class="booking" id="booking">
+
+  <span class="tagline">YOUR NEXT LOOK STARTS HERE</span>
+
+  <h2>Ready For A Fresh Cut?</h2>
+
+  <p>
+    Get in touch with Prime Cuts and make your
+    next grooming appointment.
+  </p>
+
+  <a href="mailto:hello@primecuts.com" class="button">
+    Book An Appointment
+  </a>
+
+</section>
+
+<footer>
+  © 2026 Prime Cuts. All Rights Reserved.
+</footer>
+
+</body>
+</html>
